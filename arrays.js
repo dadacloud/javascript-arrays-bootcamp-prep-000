@@ -13,11 +13,12 @@ function destructivelyAddElementToBeginningOfArray(chocolateBars, string){
 
 function addElementToEndOfArray(chocolateBars, string){
  var morechocolateBars = [...chocolateBars, string];
- return morechoclateBars;
+ return morechocolateBars;
 }
 
 function destructivelyAddElementToEndOfArray (chocolateBars, string){
-  return chocolateBars.push(string);
+  chocolateBars.push(string);
+  return chocolateBars;
 }
 
 function accessElementInArray(chocolateBars,index){
@@ -25,7 +26,8 @@ function accessElementInArray(chocolateBars,index){
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(chocolateBars){
-  return chocolateBars.shift();
+  chocolateBars.shift();
+  return chocolateBars;
 }
 
 function removeElementFromBeginningOfArray(chocolateBars){
@@ -34,7 +36,8 @@ function removeElementFromBeginningOfArray(chocolateBars){
 }
 
 function destructivelyRemoveElementFromEndOfArray(chocolateBars){
-  return chocolateBars.pop();
+  chocolateBars.pop();
+  return chocolateBars;
 }
 
 function removeElementFromEndOfArray(chocolateBars){
